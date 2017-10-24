@@ -1,0 +1,64 @@
+server:
+  port: 8081
+spring:
+ session:
+  store-type: none
+#  datasource:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      url: jdbc:mysql://127.0.0.1:3306/colintest?useUnicode=true&characterEncoding=UTF-8
+#      username: root 192.168.10.145
+#      password: test@dev10224@@$
+ datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/colintest?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: test@dev10224@@$
+
+ jpa:
+   show-sql: true
+   hibernate:
+     ddl-auto: create
+ redis:
+     host: 127.0.0.1
+     port: 6379
+     password:
+     timeout: 5000
+     pool:
+       max-idle: 8
+       min-idle: 0
+       max-active: 8
+       max-wait: -1
+# redis:
+#   database: 0
+
+# redis:
+#   database: 0
+# redis:
+#   database: 0
+#   host: 192.168.11.128
+#   password:
+#   port: 6379
+#
+#jedis :
+#  pool:
+#      host : 192.168.11.128
+#      port : 6379
+#      config :
+#        maxTotal: 100
+#        maxIdle: 10
+#        maxWaitMillis : 100000
+ #  pool:
+#     max-idle: 300
+#     min-idle: 100
+#     max-active: 600
+#     max-wait: 1000
+#   sentinel:
+#     master:
+#     nodes:
+#redis
+
+#logging:
+#  file: debug.log
+#  pattern:
+#    console: {yyyy}
+#  level: debug
